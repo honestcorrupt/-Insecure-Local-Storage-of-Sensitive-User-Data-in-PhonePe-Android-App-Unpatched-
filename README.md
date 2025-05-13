@@ -63,6 +63,8 @@ A detailed PoC is provided in the `POC/` folder, including:
 - SQLite schema & queries  
 - Redacted token + KYC data  
 - Sample API abuse with `curl`
+- 📺 Watch the PoC Video:
+- https://drive.google.com/drive/folders/1Xj9y2w3E98IZu8PUeGGI0nQPNsvVm87I?usp=sharing
 
 ---
 
