@@ -49,59 +49,58 @@ An attacker with:
 
 ...can silently extract this data and call production endpoints like:
 
-```http
+
+
 GET /v1/user/account
 Host: api.phonepe.com
-Authorization: Bearer <stolen_token>
-
+Authorization: Bearer <stolen_token> 
 
 🧪 Proof of Concept (PoC)
 
-A detailed PoC is provided in the POC/ folder, including:
+A detailed PoC is provided in the `POC/` folder, including:
 
-    Step-by-step ADB extraction
+- Step-by-step ADB extraction  
+- SQLite schema & queries  
+- Redacted token + KYC data  
+- Sample API abuse with `curl`
 
-    SQLite schema & queries
-
-    Redacted token + KYC data
-
-    Sample API abuse with curl
+---
 
 🧨 Impact
 
-    🔐 Account takeover via token replay
+- 🔐 Account takeover via token replay  
+- 🧾 Identity theft via Aadhaar/PAN data  
+- 📞 Social engineering using verified phone numbers  
+- ⚖️ Regulatory exposure under DPDP (India), GDPR (EU), PCI-DSS
 
-    🧾 Identity theft via Aadhaar/PAN data
+🧠 Disclosure Timeline Table Fix:
 
-    📞 Social engineering using verified phone numbers
-
-    ⚖️ Regulatory exposure under DPDP (India), GDPR (EU), PCI-DSS
+Instead of this:
 
 📆 Disclosure Timeline
 Date	Event
-April 2025	Vulnerability discovered and responsibly disclosed to PhonePe via BugBase
-April 22, 2025	Vendor acknowledged report, marked "Invalid" (rooted device = out of scope)
-May 2, 2025	CVE requested via MITRE
-May 13, 2025	Public advisory released on GitHub
-TBA	CVE published
-🧾 Recommendations
+April 2025	Vulnerability discovered
 
-    Use EncryptedSharedPreferences or SQLCipher for all local storage
+📆 Disclosure Timeline
 
-    Store tokens/KYC data in Android Keystore with KeyGenParameterSpec
+| Date         | Event                                                         |
+|--------------|---------------------------------------------------------------|
+| April 2025   | Vulnerability discovered and reported to PhonePe via BugBase |
+| April 22, 2025 | Report marked "Invalid" (rooted device = out of scope)     |
+| May 2, 2025  | CVE requested via MITRE                                       |
+| May 13, 2025 | Public advisory released on GitHub                            |
+| TBA          | CVE published                                                 |
 
-    Implement token scoping and expiry rotation
 
-    Enforce root detection with SafetyNet or Play Integrity API
+
 
 🤝 Credits
-
+---
     Researcher: Soyam Arya (hc4)
 
     Linkedin: https://www.linkedin.com/in/soyam-arya-a90356312/ 
 
     Contact: soyamarya96ethical@gmail.com
-
 
 
 
