@@ -125,3 +125,24 @@ Impact includes account takeover, exposure of verified financial data, and viola
 
 
 
+
+**CVE_Confirmed**   
+
+![CVE-2025-5154](https://github.com/user-attachments/assets/776b2f6d-90bc-47f2-8298-38c3e76d6edf)
+![life's first CVE pic 2 ](https://github.com/user-attachments/assets/ce1927ab-e0ac-4b77-8f34-f48093e6ef98)
+
+
+Thanks a lot VulnDB Team and VulDB Moderation Team......
+
+
+**Note : This critical vulnerability in the PhonePe Android app (CVE-2025-5154) was discovered and responsibly reported by me, Soyam Arya (aka honest_corrupt in the cybersecurity community). This CVE highlights a severe information disclosure issue that could impact millions of users. I'm proud to contribute to making digital platforms safer, and I appreciate the CVE team's recognition of this finding.*
+
+
+
+
+
+
+
+
+
+
