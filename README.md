@@ -131,6 +131,7 @@ Impact includes account takeover, exposure of verified financial data, and viola
 ![CVE-2025-5154](https://github.com/user-attachments/assets/776b2f6d-90bc-47f2-8298-38c3e76d6edf)
 ![life's first CVE pic 2 ](https://github.com/user-attachments/assets/ce1927ab-e0ac-4b77-8f34-f48093e6ef98)
 
+Check out the CVE details here : https://vuldb.com/?id.310242
 
 Thanks a lot VulnDB Team and VulDB Moderation Team......
 
